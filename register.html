@@ -4,12 +4,46 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
+	<link rel="stylesheet"href="navigation.css"/>
+<style type="text/css">
+		body{
+			background-image: url("image1.png");
+			background-repeat: no-repeat;
+			background-size: 115%;
+			
+				}
+		.index{
+			background-color: white;
+			border: 2px solid black;
+			margin-left: 40%;
+			width: 17%;
+			text-align: center;
+			padding:5%;
+			border-radius: 3%;
+			margin-top: 3%;
+		}
+		.btn-submit{
+			background-color: black;
+			color: white;
+			margin-bottom: 3%;
+			margin-top: 2%;
+		}
+		.index input{
+			margin: 3%;
+		}
+	</style>
 </head>
 <body>
-	<form action="login.html">
+	<nav class="navbar">
+		<a href="register.html">register</a>
+		<a href="login.html">login</a>
+		<a href="biography.html">biography</a>
+		<a href="photos.html">photos</a>
+	</nav>
+	<form  class="index" action="login.html">
 		<center> <h2>Registration page</h2></center>
 		<p><input placeholder="Enter name" type="text"required/></p>
-		<p><input placeholder="date of birth" type="date"/></p>
+		<p><input placeholder="date of birth" type="data"/></p>
 		<p><input placeholder="enter mobile number"type="number"/></p>
 		<p><input placeholder="Enter email" type="email"/></p>
 		<p><input placeholder="Enter password" type="password"/></p>
@@ -25,7 +59,7 @@
 		</p>
 		<p><input type="file"/></p>
 		<p>
-			<button>submit</button>
+			<button class="btn-submit">submit</button>
 			<input type="reset"/>
 		</p>
 		<p>
